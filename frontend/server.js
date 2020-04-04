@@ -24,8 +24,7 @@ import Loadable from 'react-loadable';
 const stats = JSON.parse(_readFileSync(`./dist/assets-loadable.json`))
 import { getBundles } from 'react-loadable-ssr-addon';
 
-import  Actions from './src/js/action/index.js'
-
+/*************************************************SOCKET START****************************************************************/
 
 var server = http.createServer(app);
 const io = socketio(server);
@@ -57,14 +56,22 @@ io.on('connection', (socket)=>{
 	socket.on('join', (dataParams) =>{
 
 		socket.join(dataParams.roomId);
-		console.log('JOIN');console.log(dataParams);
+		console.log('JOIN');
 		socket.broadcast.to(dataParams.roomId).emit('roomMessage', dataParams)
 	})
 
 	socket.on('disconnect', ()=>{
 		io.emit('msg', 'user left');
 	})
+
+
+
+
+
 })
+
+/*************************************************SOCKET END****************************************************************/
+
 
 var files = fs.readdirSync('./dist')
 var split_bundles = []
@@ -131,7 +138,7 @@ _readStyles().then((styleFiles)=>{
         }
         
 	})
-	let server_render_data = store.dispatch(Actions.getServerInitialData())
+	let server_render_data = []
 	promise.push(server_render_data)
 	//res.set('Cache-Control', 'public, max-age=31557600'); // one year
 

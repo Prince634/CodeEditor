@@ -5,15 +5,15 @@
   "origins": {
     "0": [
       2,
-      4,
       0
     ],
     "1": [
-      7,
+      2,
+      4,
       1
     ],
     "./src/js/container/ChatView.js": [
-      0,
+      1,
       2
     ],
     "./src/js/container/PortalView.js": [
@@ -21,7 +21,7 @@
       3
     ],
     "./src/js/container/HomeView.js": [
-      0,
+      1,
       4
     ],
     "./src/js/container/ProductDescription.js": [
@@ -54,7 +54,7 @@
       "js": [
         {
           "file": "0.bundle.js",
-          "hash": "64ef14f9c84cc30d17ce",
+          "hash": "1b0b56e9db7c727242ef",
           "publicPath": "0.bundle.js"
         }
       ]
@@ -63,7 +63,7 @@
       "js": [
         {
           "file": "1.bundle.js",
-          "hash": "2c729e05d1699956a78b",
+          "hash": "02a30cc713e4083156dd",
           "publicPath": "1.bundle.js"
         }
       ]
@@ -90,7 +90,7 @@
       "js": [
         {
           "file": "4.bundle.js",
-          "hash": "f5a29b15a415173ba154",
+          "hash": "03b4cd920204ae8e99ee",
           "publicPath": "4.bundle.js"
         }
       ]
@@ -144,14 +144,14 @@
       "css": [
         {
           "file": "style.bundle.css",
-          "hash": "e5d2afdf29b25231b442",
+          "hash": "c1cf366750f03b68a956",
           "publicPath": "style.bundle.css"
         }
       ],
       "js": [
         {
           "file": "main.bundle.js",
-          "hash": "e5d2afdf29b25231b442",
+          "hash": "c1cf366750f03b68a956",
           "publicPath": "main.bundle.js"
         }
       ]

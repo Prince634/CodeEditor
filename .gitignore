@@ -1,0 +1,8 @@
+/frontend/node_modules
+node_modules
+./node_modules
+/frontend/dist
+dist
+./dist
+frontend/server
+/frontend/package-lock.json
